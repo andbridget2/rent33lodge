@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Executive Corporate Housing | Manchester, NH</title>
+    <style>
+        /* --- GENERAL STYLES --- */
+        :root {
+            --primary: #0f172a; /* Deep Navy */
+            --accent: #cca43b;  /* Muted Gold */
+            --text: #333333;
+            --bg-light: #f8fafc;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            color: var(--primary);
+            font-weight: 700;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* --- HERO SECTION --- */
+        header {
+            background-color: var(--primary);
+            color: var(--white);
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        header h1 {
+            color: var(--white);
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.25rem;
+            color: #cbd5e1; /* Soft gray */
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+        }
+
+        .cta-button {
+            background-color: var(--accent);
+            color: var(--primary);
+            padding: 15px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            display: inline-block;
+            transition: background 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #e6c263;
+        }
+
+        /* --- HIGHLIGHTS / SPECS --- */
+        .specs {
+            background-color: var(--bg-light);
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .specs-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .spec-item {
+            background: var(--white);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            width: 200px;
+        }
+
+        .spec-item h3 {
+            margin: 10px 0 5px 0;
+            color: var(--primary);
+        }
+
+        /* --- THE SPACE --- */
+        .details {
+            padding: 60px 0;
+        }
+
+        .details-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .details-grid { grid-template-columns: 1fr; }
+            header h1 { font-size: 2rem; }
+        }
+
+        /* --- PRICING --- */
+        .pricing {
+            background-color: var(--primary);
+            color: var(--white);
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .price-tag {
+            font-size: 3rem;
+            font-weight: bold;
+            color: var(--accent);
+            margin: 10px 0;
+        }
+
+        .corporate-note {
+            background-color: rgba(255,255,255,0.1);
+            padding: 15px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            background-color: #1e293b;
+            color: #94a3b8;
+            text-align: center;
+            padding: 40px 0;
+            font-size: 0.9rem;
+        }
+
+        .contact-link {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HERO SECTION -->
+    <header>
+        <div class="container">
+            <h3>North End Manchester, NH</h3>
+            <h1>Executive Corporate Housing</h1>
+            <p>A spacious, renovated 2-bedroom home with a private garage. Perfect for relocating employees.</p>
+            <a href="mailto:your-email@example.com" class="cta-button">Request a Tour</a>
+        </div>
+    </header>
+
+    <!-- SPECIFICATIONS GRID -->
+    <section class="specs">
+        <div class="container">
+            <div class="specs-grid">
+                <div class="spec-item"><h3>2 Bed</h3><p>Spacious Layout</p></div>
+                <div class="spec-item"><h3>1,500 Sq Ft</h3><p>Premium Space</p></div>
+                <div class="spec-item"><h3>Private Garage</h3><p>Dedicated Parking</p></div>
+                <div class="spec-item"><h3>High Speed</h3><p>Fiber Optic Ready</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DETAILS SECTION -->
+    <section class="details">
+        <div class="container">
+            <div class="details-grid">
+                <div>
+                    <h2>The Space</h2>
+                    <p>This sunny, renovated second-floor unit offers the perfect blend of historic charm and modern luxury. Located in a quiet North End neighborhood near parks and museums.</p>
+                    <ul>
+                        <li><strong>Kitchen:</strong> Open layout with GE appliances & Quartz counters.</li>
+                        <li><strong>Living Area:</strong> High ceilings, hardwood floors, tasteful furnishings.</li>
+                        <li><strong>Bathrooms:</strong> Premium fixtures and fittings.</li>
+                        <li><strong>Outdoor:</strong> Private fenced patio.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Corporate Amenities</h2>
+                    <p>Designed for executives who need a zero-stress transition.</p>
+                    <ul>
+                        <li><strong>Fully Furnished:</strong> Ready to move in immediately.</li>
+                        <li><strong>Utilities Included:</strong> No hassle bills.</li>
+                        <li><strong>Laundry:</strong> In-unit with new high-efficiency appliances.</li>
+                        <li><strong>Parking:</strong> Detached private garage for security and convenience.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING SECTION -->
+    <section class="pricing">
+        <div class="container">
+            <h2>Available for Corporate Lease</h2>
+            <div class="price-tag">$2,850 / mo</div>
+            <p>All utilities included. High-speed internet ready.</p>
+            
+            <div class="corporate-note">
+                <strong>Corporate Rate Discount Available</strong><br>
+                Ask us about our 3-month+ rates for relocating staff.
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER / CONTACT -->
+    <footer>
+        <div class="container">
+            <p>Contact the owner to schedule a viewing:</p>
+            <a href="mailto:your-email@example.com" class="contact-link">YOUR EMAIL HERE</a>
+            <br><br>
+            <p>&copy; 2026 33 Lodge Street Unit 2. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
